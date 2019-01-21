@@ -25,7 +25,6 @@ namespace lesson1
                 var yesOrNo = Console.ReadLine();
                 if (yesOrNo == "да")
                 {
-                    // (имя, фамилия, возраст, рост, вес)
                     Console.WriteLine("Спасибо! Тогда приступим.");
                     Console.WriteLine("Как тебя зовут?");
                     var name = Console.ReadLine();
