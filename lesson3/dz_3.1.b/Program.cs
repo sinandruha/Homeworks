@@ -5,14 +5,25 @@ using System.Text;
 using System.Threading.Tasks;
 
 //Синицын
-//1. а) Дописать структуру Complex, добавив метод вычитания комплексных чисел. Продемонстрировать работу структуры;
+//1.
+//б) Дописать класс Complex, добавив методы вычитания и произведения чисел.Проверить работу класса;
 
-namespace dz_3._1
+namespace dz_3._1.b
 {
-    struct Complex
+    class Complex
     {
         public double im;
         public double re;
+
+        //public Complex Plus(Complex x2)
+        //{
+        //    Complex x3 = new Complex
+        //    {
+        //        im = x2.im + this.im,
+        //        re = x2.re + this.re
+        //    };
+        //    return x3;
+        //}
 
         /// <summary>
         /// Метод сложения комплексных чисел
@@ -21,9 +32,11 @@ namespace dz_3._1
         /// <returns>Сумма</returns>
         public Complex Plus(Complex x)
         {
-            Complex y;
-            y.im = im + x.im;
-            y.re = re + x.re;
+            Complex y = new Complex
+            {
+                im = im + x.im,
+                re = re + x.re
+            };
             return y;
         }
 
@@ -34,9 +47,11 @@ namespace dz_3._1
         /// <returns>Разность</returns>
         public Complex Minus(Complex x)
         {
-            Complex y;
-            y.im = im - (x.im);
-            y.re = re - (x.re);
+            Complex y = new Complex
+            {
+                im = im - (x.im),
+                re = re - (x.re)
+            };
             return y;
         }
 
@@ -47,11 +62,14 @@ namespace dz_3._1
         /// <returns>Результат произведения</returns>
         public Complex Multi(Complex x)
         {
-            Complex y;
-            y.im = re * x.im + im * x.re;
-            y.re = re * x.re - im * x.im;
+            Complex y = new Complex
+            {
+                im = re * x.im + im * x.re,
+                re = re * x.re - im * x.im
+            };
             return y;
         }
+
 
         /// <summary>
         /// Метод вывода результата вычислений для комплексных чисел
@@ -76,16 +94,16 @@ namespace dz_3._1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(@"Демонстрирую работу структуры Complex
+            Console.WriteLine(@"Демонстрирую работу класса Complex
 ");
 
-            Complex complex1;
-            complex1.re = 1;
-            complex1.im = 1;
+            Complex complex1 = new Complex();
+            complex1.re = 65;
+            complex1.im = 12;
 
-            Complex complex2;
-            complex2.re = -4;
-            complex2.im = -4;
+            Complex complex2 = new Complex();
+            complex2.re = -45;
+            complex2.im = -34;
 
             double b;
             Complex resultsum = complex1.Plus(complex2);
