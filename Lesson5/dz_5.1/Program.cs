@@ -71,7 +71,7 @@ namespace dz_5._1
                 }
                 else
                 {
-                    Console.WriteLine("Проверьте корректность ввода логина");
+                    Console.WriteLine("Данные введены некорректно. Попробуйте еще раз");
                 }
             }
             Console.ReadLine();
@@ -92,7 +92,7 @@ namespace dz_5._1
                 }
                 else
                 {
-                    Console.WriteLine("Проверьте корректность ввода логина");
+                    Console.WriteLine("Данные введены некорректно. Попробуйте еще раз");
                 }
             }
             Console.ReadLine();
