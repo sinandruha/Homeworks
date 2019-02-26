@@ -15,9 +15,28 @@ namespace dz_2._4
 {
     class Program
     {
-        static void access(string l, string p)
+        /// <summary>
+        /// Метод проверки логина и пароля.
+        /// </summary>
+        /// <param name="l">Заданный логин</param>
+        /// <param name="p">Заданный пароль</param>
+        /// <param name="ul">Логин введенный пользователем</param>
+        /// <param name="up">Пароль введенный пользователем</param>
+        /// <returns>Возвращает истину, если прошел авторизацию, и ложь, если не прошел</returns>
+        static bool Access(string l, string p, string ul, string up)
         {
-                int count = 1;
+            if (ul == l && up == p)
+            {
+                return true;
+            }
+            else return false;
+        }
+        static void Main(string[] args)
+        {
+            string l = "root";//задается логин
+            string p = "GeekBrains";//задается пароль
+
+            int count = 1;
             do
             {
                 Console.WriteLine("Введите логин");
@@ -25,14 +44,14 @@ namespace dz_2._4
                 Console.WriteLine("Введите пароль");
                 string up = Console.ReadLine();
 
-                if (count < 3 && ul == l && up == p)
+                if (count < 3 && Access(l,p,ul,up))
                 {
-                    Console.WriteLine("Данные введены верно. Доступ разрешен");
+                    Console.WriteLine("Данные введены верно. Доступ разрешен.");
                     break;
                 }
                 else if (count < 3)
                 {
-                    Console.WriteLine($@"Проверьте правильность логина и пароля и попробуйте еще раз.
+                    Console.WriteLine($@"Проверьте правильность ввода логина и пароля и попробуйте еще раз.
 У вас осталость {3 - count} попытки(а)");
                     count++;
                 }
@@ -42,13 +61,6 @@ namespace dz_2._4
                 }
             }
             while (true);
-        }
-        static void Main(string[] args)
-        {
-            string l = "root";//задается логин
-            string p = "GeekBrains";//задается пароль
-
-            access(l,p);
             
             Console.WriteLine("Добро пожаловать в личный кабинет.");
             Console.ReadLine();

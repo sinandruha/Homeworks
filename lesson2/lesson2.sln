@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dz_2.3", "dz_2.3\dz_2.3.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dz_2.4", "dz_2.4\dz_2.4.csproj", "{6F0FC02F-6CAB-41A3-85D4-84F6C0745D9C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dz_2.5", "dz_2.5\dz_2.5.csproj", "{D9309673-69F4-4498-9594-067BA506BF9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dz_2.7", "dz_2.7\dz_2.7.csproj", "{1EADBE6A-D231-4E28-8C4D-CACD67ADA6E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{6F0FC02F-6CAB-41A3-85D4-84F6C0745D9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F0FC02F-6CAB-41A3-85D4-84F6C0745D9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F0FC02F-6CAB-41A3-85D4-84F6C0745D9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9309673-69F4-4498-9594-067BA506BF9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9309673-69F4-4498-9594-067BA506BF9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9309673-69F4-4498-9594-067BA506BF9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9309673-69F4-4498-9594-067BA506BF9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EADBE6A-D231-4E28-8C4D-CACD67ADA6E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EADBE6A-D231-4E28-8C4D-CACD67ADA6E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EADBE6A-D231-4E28-8C4D-CACD67ADA6E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EADBE6A-D231-4E28-8C4D-CACD67ADA6E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

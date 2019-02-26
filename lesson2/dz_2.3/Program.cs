@@ -11,9 +11,22 @@ namespace dz_2._3
 {
     class Program
     {
+        /// <summary>
+        /// Проверяет, является ли число нечетным и положительным. В случае если число не соотвествует условию, возвращет 0.
+        /// </summary>
+        /// <param name="i">Число</param>
+        /// <returns></returns>
+        static int PosOddNum(int i)
+        {
+            if (i > 0 && !(i % 2 == 0))
+            {
+                return i;
+            }
+            return 0;
+        }
         static void Main(string[] args)
         {
-            Console.WriteLine(@"Эта программа считатет сумму всех введенных вами нечетных положительных чисел
+            Console.WriteLine(@"Эта программа считает сумму всех введенных вами нечетных положительных чисел
 Для вывода суммы чисел на экран напишите 0
 ");
 
@@ -24,14 +37,9 @@ namespace dz_2._3
                 Console.WriteLine("Введите целое число");
                 int i = Convert.ToInt32(Console.ReadLine());
 
-                if (i > 0 && !(i % 2 == 0))
-                {
-                    sum = sum + i;
-                }
-                else if (i == 0)
-                {
-                    break;
-                }
+                sum += PosOddNum(i);
+
+                if (i == 0) break;                
             }
             Console.WriteLine($"Сумма всех введенных нечетных положительных чисел равняется {sum}");
             Console.ReadLine();

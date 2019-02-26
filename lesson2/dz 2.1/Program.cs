@@ -11,20 +11,26 @@ namespace dz_2._1
 {
     class Program
     {
-        static void compare(int a, int b, int c)
+        /// <summary>
+        /// Возвращает минимальное из трех чисел
+        /// </summary>
+        /// <param name="a">Первое число</param>
+        /// <param name="b">Второе число</param>
+        /// <param name="c">Третье число</param>
+        /// <returns>Минимальное значение</returns>
+        static int Compare(int a, int b, int c)
         {
+            int min = 0;
             if (a < b && a < c)
             {
-                Console.WriteLine(a);
+                min = a;
             }
-            else if (b < a && b < c)
+            else if (b < c)
             {
-                Console.WriteLine(b);
+                min = b;
             }
-            else if (c < a && c < b)
-            {
-                Console.WriteLine(c);
-            }
+            else min = c;
+            return min;
         }
         static void Main(string[] args)
         {
@@ -37,7 +43,7 @@ namespace dz_2._1
             Console.WriteLine("Введите третье число");
             int c = Convert.ToInt32(Console.ReadLine());
 
-            compare(a, b, c);
+            Console.WriteLine(Compare(a, b, c));
 
             Console.ReadLine();
         }

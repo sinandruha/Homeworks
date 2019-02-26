@@ -11,7 +11,12 @@ namespace dz_2._2
 {
     class Program
     {
-        static public int num(int x)//подсчитывает количество цифр в целом положительном числе
+        /// <summary>
+        /// Подсчитывает количество цифр в целом положительном числе
+        /// </summary>
+        /// <param name="x">Число</param>
+        /// <returns>Количество цифр в числе</returns>
+        static int Num(int x)
         {
             int count = 0;
             while (x > 0)
@@ -23,12 +28,11 @@ namespace dz_2._2
         }
         static void Main(string[] args)
         {
-            Console.WriteLine(@"Программа подсчета количества цифр числа
-");
+            Console.WriteLine("Программа подсчета количества цифр числа\n");
 
             Console.WriteLine("Напишите любое целое положительное число");
             int x = Convert.ToInt32(Console.ReadLine());
-            int i = num(x);
+            int i = Num(x);
 
             Console.WriteLine($"В вашем числе {i} цифр");
 
