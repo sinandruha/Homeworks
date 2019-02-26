@@ -7,19 +7,10 @@ using System.Threading.Tasks;
 //Синицын
 //Написать программу обмена значениями двух переменных.
 //б) * без использования третьей переменной.
-//Программу дописать не смог. Не понял как в переменную MyString заводить данные от пользователя.
+//Доделал задание, оказывается все было проще)
 
 namespace tradeint2
 {
-    class MyString
-    {
-        public int MyProperty { get; set; }
-
-        public MyString (int a)
-        {
-            MyProperty = a;
-        }
-    }
     class Program
     {
         static void Main(string[] args)
@@ -28,11 +19,12 @@ namespace tradeint2
 ");
 
             Console.WriteLine("Задайте значение первой переменной (используйте целые числа)");
-            MyString x1 = new MyString(Console.ReadLine());
+            int x1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Задайте значение второй переменной (используйте целые числа)");
-            MyString x2 = new MyString(Console.ReadLine());
-            x1 = x2;
-            x2 = x1;
+            int x2 = Convert.ToInt32(Console.ReadLine());
+            x2 = x1 + x2;
+            x1 = x2 - x1;
+            x2 = x2 - x1;
 
             Console.WriteLine("Теперь нажмите Enter для обмена значениями переменных");
             Console.ReadLine();
