@@ -13,6 +13,9 @@ using System.Threading.Tasks;
 
 namespace SimpleLibrary
 {
+    /// <summary>
+    /// Класс обыкновенных дробей. Предоставляет константы и статические методы для общих математических функций с этими дробями.
+    /// </summary>
     public class Fraction
     {
         private int Denominator;

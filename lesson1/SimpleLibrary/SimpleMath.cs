@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace SimpleLibrary
 {
+    /// <summary>
+    /// Класс с простыми методами для различных математических вычислений
+    /// </summary>
     public class SimpleMath
     {
         /// <summary>
