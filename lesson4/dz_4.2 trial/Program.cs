@@ -224,6 +224,8 @@ namespace dz_4._2_trial
             Console.WriteLine(arr2.ConvertToString());
             Console.WriteLine(arr2.MaxCount);
             Console.ReadLine();
+
+          
         }
     }
 }

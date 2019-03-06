@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C434FB3A-AA1B-4581-9A0D-D4FF3E59DC84}</ProjectGuid>
+    <ProjectGuid>{9182A69C-46D7-44C1-8F7C-CEC07D69A879}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>dz_4._2</RootNamespace>
-    <AssemblyName>dz_4.2</AssemblyName>
+    <RootNamespace>dz_4._3.e</RootNamespace>
+    <AssemblyName>dz_4.3.e</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

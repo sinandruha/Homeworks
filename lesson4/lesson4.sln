@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dz_4.1", "dz_4.1\dz_4.1.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dz_4.2 trial", "dz_4.2 trial\dz_4.2 trial.csproj", "{7456AA25-E616-431D-ABE0-E477235C8AAB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleLibrary", "..\lesson1\SimpleLibrary\SimpleLibrary.csproj", "{69A82B8F-326F-4466-8783-145F551BEA71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dz_4.3.e", "dz_4.3.e\dz_4.3.e.csproj", "{9182A69C-46D7-44C1-8F7C-CEC07D69A879}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{7456AA25-E616-431D-ABE0-E477235C8AAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7456AA25-E616-431D-ABE0-E477235C8AAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7456AA25-E616-431D-ABE0-E477235C8AAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69A82B8F-326F-4466-8783-145F551BEA71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69A82B8F-326F-4466-8783-145F551BEA71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69A82B8F-326F-4466-8783-145F551BEA71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69A82B8F-326F-4466-8783-145F551BEA71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9182A69C-46D7-44C1-8F7C-CEC07D69A879}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9182A69C-46D7-44C1-8F7C-CEC07D69A879}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9182A69C-46D7-44C1-8F7C-CEC07D69A879}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9182A69C-46D7-44C1-8F7C-CEC07D69A879}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
